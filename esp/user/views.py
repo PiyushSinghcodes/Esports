@@ -44,11 +44,11 @@ def Login(request):
 
 		# AuthenticationForm_can_also_be_used__
 
-		username = request.POST['username']
-		password = request.POST['password']
+		username = request.POST.get('username','')
+		password = request.POST.get('password','')
 		user = authenticate(request, username = username, password = password)
 		if user is not None:
-			form = login(request, user)
+			login(request, user)
 			messages.success(request, f' welcome {username} !!')
 			return redirect('index')
 		else:
