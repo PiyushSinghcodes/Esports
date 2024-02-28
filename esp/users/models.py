@@ -1,9 +1,12 @@
+
 from django.db import models
 
 # Create your models here.
 
 from django.contrib.auth.models import User
 from PIL import Image
+from django.db.models.signals import post_save
+import uuid
 
 
 # Extending User Model Using a One-To-One Link
@@ -11,6 +14,7 @@ class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
 
     avatar = models.ImageField(default='default.jpg', upload_to='profile_images')
+
     bio = models.TextField()
 
     def __str__(self):
@@ -26,4 +30,6 @@ class Profile(models.Model):
             new_img = (100, 100)
             img.thumbnail(new_img)
             img.save(self.avatar.path)
+            
+
 

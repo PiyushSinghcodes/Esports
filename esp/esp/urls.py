@@ -13,6 +13,8 @@ from home import views as p
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',p.home),
+    
+    
 
     path('user/', include('users.urls')),
 
