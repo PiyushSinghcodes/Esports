@@ -8,26 +8,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feed | LinkedIn</title>
     <link rel="icon" href="https://static.licdn.com/sc/h/akt4ae504epesldzj74dzred8">
-    
+    <link rel="stylesheet" href="{% static 'style1.css' %}"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
    <!-- fontfamily -->
-
+ 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{% static 'style1.css' %}">  
+     
 </head>
 {% block content %}
 
-    <div class="jumbotron">
-        <h1 class="display-4">Welcome, {{user.first_name.title|default:'Guest'}}</h1>
-        <p class="lead">
-            Ready to level up your esports journey? Let the games begin! <br>
+<link rel="stylesheet" href="{% static 'style1.css' %}">
+<canvas id="canvas"  style="background-color: black;overflow: hidden;"></canvas>
+ <div class="jumbotron">
 
-Play hard, have fun, and may your victories be legendary!
+    <h1 class="display-4">Welcome, {{user.first_name.title|default:'Guest'}}</h1>
+    <p class="lead">
+        Ready to level up your esports journey? Let the games begin! <br>
 
+        Play hard, have fun, and may your victories be legendary!
+      </p>
+ 
+       </div>
+</div>
+ 
 
-        </p>
         <hr class="my-1">
         <p class="lead" style="margin-bottom: 1px;">
             {% if user.is_authenticated %}
@@ -40,7 +46,7 @@ Play hard, have fun, and may your victories be legendary!
 
     <div class="popup-container" id="popup">
         <div class="header">
-            <img src="{% static 'img/logo.png' %}">
+            <img src="{% static 'PHOTO-2024-02-28-19-56-07.jpg' %}">
             <h1>Welcome to LinkedIn</h1>
         </div>
         <div class="input-field">
@@ -72,13 +78,13 @@ Play hard, have fun, and may your victories be legendary!
     <div class="container">
         <div class="left-sidebar">
             <div class="sidebar-profile-box">
-                <img src="https://media.licdn.com/dms/image/D4D16AQFtIXq65MaKlQ/profile-displaybackgroundimage-shrink_350_1400/0/1678031428070?e=1690416000&v=beta&t=2rvmFlvsdWbezXYvfuL0Z74epouz98CkoONavSEQ-dY"
+                <img src="{% static 'PHOTO-2024-02-28-19-56-07.jpg' %}"
                     width="100%" class="cover-img">
                 <div class="sidebar-profile-info">
                     <img
                         src="https://media.licdn.com/dms/image/D4D03AQHyJrtE6WbAfw/profile-displayphoto-shrink_200_200/0/1678030659122?e=1690416000&v=beta&t=rR6tak242QPL0LZERB6aJT_1V9Qwl-kV_GV99Ual514">
-                    <h1>AzaanUllah Khan</h1>
-                    <h3>Student at Saylani Mass IT Train -ing, Web & App</h3>
+                    <h1>Team FREE KILL</h1>
+                    <h3>Esports Tournament Organizers</h3>
                     <ul>
                         <li>Your Profile Views<span>100</span></li>
                         <li>Your Post Views<span>370</span></li>
@@ -92,32 +98,36 @@ Play hard, have fun, and may your victories be legendary!
             </div>
             <div class="sidebar-activity" id="sidebarActivity">
                 <h3>RECENT</h3>
-                <a href=""><img src="img/recent.png">Web Development</a>
-                <a href=""><img src="img/recent.png">User Interface</a>
-                <a href=""><img src="img/recent.png">Online Learning</a>
-                <a href=""><img src="img/recent.png">Learn Online</a>
-                <a href=""><img src="img/recent.png">Code Better</a>
-                <a href=""><img src="img/recent.png">Group Learning</a>
-                <h3>GROUPS</h3>
-                <a href=""><img src="img/group.png">Saylani Mass It Tranining</a>
-                <a href=""><img src="img/group.png">The Perfect Dev</a>
-                <a href=""><img src="img/group.png">Techno Kids</a>
-                <a href=""><img src="img/group.png">Web and App Development</a>
+                <a href=""><img src="img/recent.png">Top Esports Moments</a>
+                <a href=""><img src="img/recent.png">Pro Gaming Strategies</a>
+                <a href=""><img src="img/recent.png">Esports Tournaments Recap</a>
+                <a href=""><img src="img/recent.png">Latest Game Updates</a>
+                <a href=""><img src="img/recent.png">In-Depth Player Interviews</a>
+                <a href=""><img src="img/recent.png">Behind the Scenes at Esports Events</a>
+            
+                <h3>TEAMS</h3>
+                <a href=""><img src="img/group.png">Team Liquid</a>
+                <a href=""><img src="img/group.png">Fnatic</a>
+                <a href=""><img src="img/group.png">OG Esports</a>
+                <a href=""><img src="img/group.png">Cloud9</a>
+            
                 <h3>HASHTAGS</h3>
-                <a href=""><img src="img/hashtag.png">webdevelopment</a>
-                <a href=""><img src="img/hashtag.png">letsconnect!</a>
-                <a href=""><img src="img/hashtag.png">pakistanzindabad</a>
+                <a href=""><img src="img/hashtag.png">esportsnews</a>
+                <a href=""><img src="img/hashtag.png">gamerlife</a>
+                <a href=""><img src="img/hashtag.png">gameon</a>
+            
                 <div class="discover-more-link">
                     <a href="">Discover More</a>
                 </div>
             </div>
+            
             <p id="showMoreLink" onclick="showSideBar()">Show More <b>+</b></p>
         </div>
         <div class="main-content" id="main">
             <div class="create-post">
                 <div class="create-post-input">
                     <img
-                        src="https://media.licdn.com/dms/image/D4D03AQHyJrtE6WbAfw/profile-displayphoto-shrink_100_100/0/1678030659122?e=1690416000&v=beta&t=9Vnws7rVjaREQebj3HeuNH3GQ_VS0XS4XFnkI5ttBpQ">
+                        src="{% static 'PHOTO-2024-02-28-19-56-07.jpg' %}">
                     <textarea placeholder="Start a Post"></textarea>
                 </div>
                 <div class="create-post-links">
@@ -1215,6 +1225,7 @@ Play hard, have fun, and may your victories be legendary!
     </div>
     
     <script src="{% static 'script1.js' %}"></script>
+    <script src="{% static 'master.js' %}"></script>
     
 
 {% endblock content %}
