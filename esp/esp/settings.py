@@ -45,6 +45,8 @@ INSTALLED_APPS = [
     'home',
     'users.apps.UserConfig',
     'social_django',
+    'tournaments',
+    'teams',
    
 ]
 

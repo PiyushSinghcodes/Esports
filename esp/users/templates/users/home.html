@@ -6,7 +6,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feed | LinkedIn</title>
     <link rel="icon" href="https://static.licdn.com/sc/h/akt4ae504epesldzj74dzred8">
     <link rel="stylesheet" href="{% static 'style1.css' %}"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -47,7 +46,6 @@
     <div class="popup-container" id="popup">
         <div class="header">
             <img src="{% static 'PHOTO-2024-02-28-19-56-07.jpg' %}">
-            <h1>Welcome to LinkedIn</h1>
         </div>
         <div class="input-field">
             <label for="fullname">Full Name:</label>
@@ -82,8 +80,8 @@
                     width="100%" class="cover-img">
                 <div class="sidebar-profile-info">
                     <img
-                        src="https://media.licdn.com/dms/image/D4D03AQHyJrtE6WbAfw/profile-displayphoto-shrink_200_200/0/1678030659122?e=1690416000&v=beta&t=rR6tak242QPL0LZERB6aJT_1V9Qwl-kV_GV99Ual514">
-                    <h1>Team FREE KILL</h1>
+                        src="{% static 'PHOTO-2024-02-28-19-56-07.jpg' %}">
+                          <h1>Team FREE KILL</h1>
                     <h3>Esports Tournament Organizers</h3>
                     <ul>
                         <li>Your Profile Views<span>100</span></li>
@@ -92,34 +90,36 @@
                     </ul>
                 </div>
                 <div class="sidebar-profile-link">
-                    <a href=""><img src="img/items.png">My Items</a>
-                    <a href=""><img src="img/premium.png">Try Premium</a>
+                    <a href=""><img src="{% static 'items.png' %}">My Items</a>
+                    <a href=""><img src="{% static 'premium.png' %}">Try Premium</a>
                 </div>
+                
             </div>
             <div class="sidebar-activity" id="sidebarActivity">
                 <h3>RECENT</h3>
-                <a href=""><img src="img/recent.png">Top Esports Moments</a>
-                <a href=""><img src="img/recent.png">Pro Gaming Strategies</a>
-                <a href=""><img src="img/recent.png">Esports Tournaments Recap</a>
-                <a href=""><img src="img/recent.png">Latest Game Updates</a>
-                <a href=""><img src="img/recent.png">In-Depth Player Interviews</a>
-                <a href=""><img src="img/recent.png">Behind the Scenes at Esports Events</a>
+                <a href=""><img src="{% static 'recent.png' %}">Top Esports Moments</a>
+                <a href=""><img src="{% static 'recent.png' %}">Pro Gaming Strategies</a>
+                <a href=""><img src="{% static 'recent.png' %}">Esports Tournaments Recap</a>
+                <a href=""><img src="{% static 'recent.png' %}">Latest Game Updates</a>
+                <a href=""><img src="{% static 'recent.png' %}">In-Depth Player Interviews</a>
+                <a href=""><img src="{% static 'recent.png' %}">Behind the Scenes at Esports Events</a>
             
                 <h3>TEAMS</h3>
-                <a href=""><img src="img/group.png">Team Liquid</a>
-                <a href=""><img src="img/group.png">Fnatic</a>
-                <a href=""><img src="img/group.png">OG Esports</a>
-                <a href=""><img src="img/group.png">Cloud9</a>
+                <a href=""><img src="{% static 'group.png' %}">Team Liquid</a>
+                <a href=""><img src="{% static 'group.png' %}">Fnatic</a>
+                <a href=""><img src="{% static 'group.png' %}">OG Esports</a>
+                <a href=""><img src="{% static 'group.png' %}">Cloud9</a>
             
                 <h3>HASHTAGS</h3>
-                <a href=""><img src="img/hashtag.png">esportsnews</a>
-                <a href=""><img src="img/hashtag.png">gamerlife</a>
-                <a href=""><img src="img/hashtag.png">gameon</a>
+                <a href=""><img src="{% static 'hashtag.png' %}">esportsnews</a>
+                <a href=""><img src="{% static 'hashtag.png' %}">gamerlife</a>
+                <a href=""><img src="{% static 'hashtag.png' %}">gameon</a>
             
                 <div class="discover-more-link">
                     <a href="">Discover More</a>
                 </div>
             </div>
+            
             
             <p id="showMoreLink" onclick="showSideBar()">Show More <b>+</b></p>
         </div>
@@ -131,35 +131,38 @@
                     <textarea placeholder="Start a Post"></textarea>
                 </div>
                 <div class="create-post-links">
-                    <li><img src="img/photo.png">Photo</li>
-                    <li><img src="img/video.png">Video</li>
-                    <li><img src="img/event.png">Event</li>
+                    <li><img src="{% static 'photo.png' %}">Photo</li>
+                    <li><img src="{% static 'video.png' %}">Video</li>
+                    <li><img src="{% static 'event.png' %}">Event</li>
                     <li onclick="popup()">Post</li>
                 </div>
+                
             </div>
             <div class="sort-by">
                 <hr>
-                <p>Sort By: <span>Top <img src="img/down-arrow.png" alt=""></span></p>
+                <p>Sort By: <span>Top <img src="{% static 'down-arrow.png' %}" alt=""></span></p>
             </div>
+            
             <!-- allposts -->
             
             <div class="post">
                 <div class="post-author">
-                    <img src="https://example.com/ishaan-avatar.jpg">
+                    <img src="{% static 'PHOTO-2024-02-29-22-33-57 2.jpg' %}">
                     <div>
                         <h1>Ishaan Sharma &middot; <span style="font-weight: lighter;">Esports Coach</span></h1>
                         <small>3w ago</small>
                     </div>
                 </div>
                 <p>Inspiring play crafted by Aarav Patel, a skilled esports athlete from Team Mumbai Mavericks, paying tribute to coaches and teammates.</p>
-                <img src="https://example.com/esports-poem-image.jpg" width="100%">
+                <img src="{% static 'PHOTO-2024-02-29-10-18-12.jpg' %}" width="100%">
                 <div class="post-stats">
                     <div>
-                        <img src="img/thumbsup.png">
-                        <img src="img/love.png">
-                        <img src="img/clap.png">
+                        <img src="{% static 'thumbsup.png' %}">
+                        <img src="{% static 'love.png' %}">
+                        <img src="{% static 'clap.png' %}">
                         <span class="liked-users">Riya Singh and 54 others</span>
                     </div>
+                    
                     <div>
                         <span>22 comments &middot; 24 shares</span>
                     </div>
@@ -171,21 +174,22 @@
             
             <div class="post">
                 <div class="post-author">
-                    <img src="https://example.com/anaya-avatar.jpg">
+                    <img src="{% static 'PHOTO-2024-02-29-22-33-56.jpg' %}">
                     <div>
                         <h1>Anaya Desai &middot; <span style="font-weight: lighter;">Esports News</span></h1>
                         <small>1d ago &middot; Edited</small>
                     </div>
                 </div>
                 <p>Saluting our esports legends with the caption "Legends ♥."</p>
-                <img src="https://example.com/esports-heroes-image.jpg" width="100%">
+                <img src="{% static 'PHOTO-2024-02-29-22-33-56.jpg' %}" width="100%">
                 <div class="post-stats">
                     <div>
-                        <img src="img/thumbsup.png">
-                        <img src="img/love.png">
-                        <img src="img/clap.png">
+                        <img src="{% static 'thumbsup.png' %}">
+                        <img src="{% static 'love.png' %}">
+                        <img src="{% static 'clap.png' %}">
                         <span class="liked-users">Vikrant Sharma and 43 others</span>
                     </div>
+                    
                     <div>
                         <span>22 comments &middot; 24 shares</span>
                     </div>
@@ -198,46 +202,45 @@
         </div>
         <div class="right-sidebar">
             <div class="sidebar-news">
-                <img src="img/more.png" class="info-icon">
-                <h3>Trending News</h3>
-                <a href="">High demand for skilled manpower</a>
+                <img src="{% static 'PHOTO-2024-02-29-22-33-56.jpg' %}" class="info-icon">
+                <h3>Esports Buzz</h3>
+                <a href="#">Rising demand for skilled esports players</a>
                 <span>1d ago &middot; 1934 readers</span>
-                <a href="">Carrier growing horizontally too</a>
+                <a href="#">Esports careers expanding rapidly</a>
                 <span>10d ago &middot; 1084 readers</span>
-                <a href="">Less work visa for US, more for UK</a>
+                <a href="#">Visa updates: Easier access to international tournaments</a>
                 <span>7h ago &middot; 7980 readers</span>
-                <a href="">More hiring = Higher confidence ?</a>
+                <a href="#">More hiring in esports, boosting confidence</a>
                 <span>1h ago &middot; 1924 readers</span>
-                <a href="">Saylani has announced batch 4 of Techno Kids</a>
+                <a href="#">Saylani announces Techno Kids Batch 4 for esports training</a>
                 <span>8h ago &middot; 1906 readers</span>
-                <a href="" class="read-more-link">Read More</a>
+                <a href="#" class="read-more-link">Read More</a>
             </div>
             <div class="sidebar-ad">
-                <small>AD &middot; &middot; &middot;</small>
-                <p>Master the 5 principles of web design</p>
+                <small>SPONSORED &middot; &middot; &middot;</small>
+                <p>Master the 5 principles of dominating in esports</p>
                 <div>
-                    <img src="https://media.licdn.com/dms/image/D4D03AQHyJrtE6WbAfw/profile-displayphoto-shrink_100_100/0/1678030659122?e=1690416000&v=beta&t=9Vnws7rVjaREQebj3HeuNH3GQ_VS0XS4XFnkI5ttBpQ"
-                        alt="">
-                    <img src="https://media.licdn.com/dms/image/C4D0BAQEBFPcB1s3wrg/company-logo_200_200/0/1675703359239?e=1693440000&v=beta&t=H9M2a8YBEdzm-cXDjYWEJQqIbWpvBWnwJUFD7Zxp4zo" alt="">
+                    <img src="{% static 'PHOTO-2024-02-29-22-33-56 2.jpg' %}" alt="">
+                    <img src="{% static 'PHOTO-2024-02-29-22-33-58 2.jpg' %}" alt="">
                 </div>
-                <b>Share Your Experience With Saylani</b>
+                <b>Share Your Esports Journey with Saylani</b>
                 <a href="https://www.linkedin.com/feed/update/urn:li:activity:7068264850904293377/" class="ad-link" target="_blank">Learn More</a>
             </div>
             <div class="sidebar-useful-links">
-                <a href="">About</a>
-                <a href="">Accesibility</a>
-                <a href="">Help Center</a>
-                <a href="">Privacy Policy</a>
-                <a href="">Advertising</a>
-                <a href="">Get the App</a>
-                <a href="">More</a>
+                <a href="#">About EsportsHub</a>
+                <a href="#">Accessibility</a>
+                <a href="#">Help Center</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Advertising in Esports</a>
+                <a href="#">Get the Esports App</a>
+                <a href="#">More</a>
                 <div class="copyright-msg">
-                    <img src="img/logo.png">
-                    <p>AzaanUllah &copy; All Rights Reserved</p>
+                    <img src="{% static 'PHOTO-2024-02-28-19-56-07.jpg' %}">
+                    <p>OSMIUM &copy; All Rights Reserved</p>
                 </div>
             </div>
         </div>
-    </div>
+        
     
     <script src="{% static 'script1.js' %}"></script>
     <script src="{% static 'master.js' %}"></script>

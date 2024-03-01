@@ -16,6 +16,8 @@
     <title>{% block title %} {% endblock %} </title>
 </head>
 <body>
+    {% block content %}
+    <link rel="stylesheet" href="{% static 'style1.css' %}">
   <div class="container-fluid p-2 my-2 ">
     <div class="row">
       <div class="col-md-12">
@@ -50,15 +52,30 @@
             </button>
           </div>
         {% endif %}
-        {% block content %}{% endblock %}
+    
+
       </div>
     </div>
   </div>
-
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  {% endblock content %}
+  
+  <div class="grid text-center">
+    <div class="g-col-4">
+        <img src="" alt="Tournament Image 1">
+        <p>Tournament 1</p>
+        <p>Date: March 15, 2024</p>
+    </div>
+    <div class="g-col-4">
+        <img src="your_image_url_2.jpg" alt="Tournament Image 2">
+        <p>Tournament 2</p>
+        <p>Date: April 5, 2024</p>
+    </div>
+    <div class="g-col-4">
+        <img src="your_image_url_3.jpg" alt="Tournament Image 3">
+        <p>Tournament 3</p>
+        <p>Date: May 10, 2024</p>
+    </div>
+</div>
 
     <!-- A plugin for password show/hide  -->
     <script src="{% static 'script1.js' %}"></script>
@@ -66,3 +83,5 @@
 
 </body>
 </html>
+
+
