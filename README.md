@@ -23,15 +23,19 @@ To get a local copy up and running, follow these simple steps:
 Clone the repository:
 
 git clone https://github.com/ReprisalGod/Esports.git
+
 cd esp
 
 Install dependencies
+
 pip install -r requirements.txt
 
 Apply migrations
+
 python manage.py migrate
 
 Run the server
+
 python manage.py runserver
 
 Usage
