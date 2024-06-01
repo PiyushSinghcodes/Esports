@@ -1,4 +1,3 @@
-<img width="1362" alt="Screenshot 2024-06-01 at 9 45 37 PM" src="https://github.com/ReprisalGod/Esports/assets/97118312/b255699e-f1a1-4e2b-bba1-ac7f006ec515">GamersConnect
 
 Introduction
 
