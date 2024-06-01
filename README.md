@@ -1,3 +1,4 @@
+Screenshots of deployed project provided below:
 
 Introduction
 
@@ -41,7 +42,9 @@ python manage.py runserver
 Usage
 
 Open your web browser and navigate to http://127.0.0.1:8000/.
+
 Register or Login to your account.
+
 Explore the features like job listings, profiles, and messaging.
 
 Screenshots:
