@@ -42,6 +42,12 @@ Explore the features like job listings, profiles, and messaging.
 
 Screenshots:
 
+<img width="1362" alt="Screenshot 2024-06-01 at 9 45 37 PM" src="https://github.com/ReprisalGod/Esports/assets/97118312/7b803adb-d352-43e6-b684-de84de32c96d">
+<img width="1365" alt="Screenshot 2024-06-01 at 9 46 34 PM" src="https://github.com/ReprisalGod/Esports/assets/97118312/d2622121-c507-41e6-a3bb-9b9f35b43112">
+<img width="1345" alt="Screenshot 2024-06-01 at 9 47 48 PM" src="https://github.com/ReprisalGod/Esports/assets/97118312/afc0e585-1412-4951-afb0-8e09d847bb63">
+<img width="1357" alt="Screenshot 2024-06-01 at 9 48 51 PM" src="https://github.com/ReprisalGod/Esports/assets/97118312/f56afb4c-9cc2-45b7-bf5d-a590285e0ed2">
+
+
 Contributing:
 
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
